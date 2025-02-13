@@ -13,14 +13,21 @@ body{
 .container {
     display: flex;
     align-items: center;
+    align-items: center;
+    gap: 20px;
 }
 
-img {
+.src{
     border: 2px solid #8ed6db;
     border-radius: 50px;
     padding: 10px;
-    width: 50%;
-    height: auto;
+    width: 384px;
+    height: 384px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    transform: translate(-300px);
+
 }
 
 .text {
@@ -31,11 +38,17 @@ img {
     color: #5ebec5;
     text-decoration: overline;
     text-align:center;
+    flex-direction: column;
+    line-height: 5.0;
+    transform: translate(-100px);
+
 }
 
 .social-icons {
     display: flex;
     gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .icon {
@@ -62,5 +75,4 @@ img {
     border: 2px solid purple;
     border-radius: 50%;
 }
-
 
