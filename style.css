@@ -15,10 +15,11 @@ body{
     align-items: center;
     align-items: center;
     gap: 20px;
+    margin-top: 100px;
 }
 
 .src{
-    border: 2px solid #8ed6db;
+
     border-radius: 50px;
     padding: 10px;
     width: 384px;
@@ -27,6 +28,24 @@ body{
     display: block;
     margin: auto;
     transform: translate(-300px);
+    border-radius: 10px;
+    border: 5px solid #000;
+
+}
+
+.accent-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-300px);
+    width: 384px;
+    height: 384px;
+    background: #f4b400;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    padding: 10px;
 
 }
 
@@ -40,26 +59,27 @@ body{
     text-align:center;
     flex-direction: column;
     line-height: 5.0;
-    transform: translate(-100px);
+    transform: translate(-200px);
+    font-size: 10px;
+    margin-top: 100px;
 
 }
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 300px;
 }
 
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    background: purple;
+    width: 55px;
+    height: 55px;
+    background: rgb(248, 248, 248);
     color: white;
-    font-size: 24px;
     border-radius: 50%;
     border: 2px solid white;
     text-decoration: none;
@@ -67,12 +87,19 @@ body{
     position: relative;
 }
 
+.icon-img {
+    width: 45px; 
+    height: 45px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 .icon::before {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
-    border: 2px solid purple;
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
 }
 
